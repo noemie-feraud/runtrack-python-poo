@@ -1,0 +1,14 @@
+class User:
+    def __init__(self,name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self,name):
+        self.__name = name
+vorname = User("Pierre")
+print(vorname.get_name())
+
+vorname.set_name("Celine")
+print(vorname.get_name())
